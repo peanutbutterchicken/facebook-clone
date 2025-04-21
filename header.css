@@ -66,6 +66,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.current-page-selection:hover,
+.video-page-selection:hover,
+.marketplace-page-selection:hover,
+.groups-page-selection:hover,
+.entertainment-page-selection:hover {
+    background-color: rgba(238, 238, 238, 0.671);
 }
 .middle-row-item svg {
     fill: rgb(116, 116, 116);
