@@ -85,6 +85,55 @@
     box-sizing: border-box;
     border-bottom: 3px solid #0064d1;
 }
+/*Middle and Right Header Container Tooltips */
+.current-page-selection,
+.video-page-selection,
+.marketplace-page-selection,
+.groups-page-selection,
+.entertainment-page-selection,
+.right-row-item .btn {
+    position: relative;
+}
+.current-page-selection .header-tooltip,
+.video-page-selection .header-tooltip,
+.marketplace-page-selection .header-tooltip,
+.groups-page-selection .header-tooltip,
+.entertainment-page-selection .header-tooltip,
+.right-row-item .header-tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: -38px;
+    z-index: 100;
+
+    height: 33px;
+    width: max-content;
+    padding: 2px 12px 1px 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.753);
+    border: none;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.438);
+    font-size: 12px;
+    border-radius: 13px;
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity ease 0.08s;
+}
+.current-page-selection:hover .header-tooltip,
+.video-page-selection:hover .header-tooltip,
+.marketplace-page-selection:hover .header-tooltip,
+.groups-page-selection:hover .header-tooltip,
+.entertainment-page-selection:hover .header-tooltip,
+.menu-btn:hover .header-tooltip,
+.msg-btn:hover .header-tooltip,
+.notif-btn:hover .header-tooltip,
+.profile-btn:hover .header-tooltip {
+    opacity: 1;
+}
 
 /*Right container*/
 .right-row {
@@ -101,7 +150,10 @@
     height: 20px;
     width: 20px;
 }
-.right-row-item .btn {
+.right-row-item .menu-btn,
+.right-row-item .msg-btn,
+.right-row-item .notif-btn,
+.right-row-item .profile-btn {
     display: flex;
     justify-content: center;
     align-items: center;
