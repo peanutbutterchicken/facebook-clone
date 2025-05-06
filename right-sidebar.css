@@ -44,7 +44,10 @@
 .contact-container{
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 17px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
 }
 .contact-container img {
     height: 36px;
@@ -57,4 +60,10 @@
 .contact-container p{
     color: black;
     font-size: 15px;
+}
+
+.contact-container:hover {
+    background-color: #ececec;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
