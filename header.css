@@ -7,9 +7,12 @@
     left: 0;
     right: 0;
 
+    background-color: #ffffff;
     font-size: 16px;
     box-shadow: 0 0 5px -3px black;
     height: 56px;
+
+    z-index: 100;
 }
 
 /*Left container*/
